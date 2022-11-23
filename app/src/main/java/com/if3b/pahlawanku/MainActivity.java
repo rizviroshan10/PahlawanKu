@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void tampilDataCard(){
         rvPahlawan.setLayoutManager(new LinearLayoutManager(this));
-        AdapterCard varAdapterCard = new AdapterCard(data);
+        AdapterGrid varAdapterCard = new AdapterGrid(data,MainActivity.this);
         rvPahlawan.setAdapter(varAdapterCard);
     }
 }
